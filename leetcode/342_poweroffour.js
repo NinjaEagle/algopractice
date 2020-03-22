@@ -1,3 +1,5 @@
+// 342 leetcode
+// Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
 var isPowerOfFour = function(num) {
 	//      objective- return a boolean based on the input number to see if it's divisible by 4
 	//     if it's divisible
