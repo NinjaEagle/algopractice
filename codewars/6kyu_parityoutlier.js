@@ -17,3 +17,10 @@ function findOutlier(integers) {
 	if (evenIntegers.length == 1) return evenIntegers[0]
 	else return oddIntegers[0]
 }
+
+// Refactored solution
+// function findOutlier(integers) {
+//   let oddInts = integers.filter(val => val % 2 !== 0);
+//   let evenInts =integers.filter(val => val % 2 == 0 || val == 0);
+//   return evenInts.length == 1? evenInts[0]: oddInts[0]
+// }
