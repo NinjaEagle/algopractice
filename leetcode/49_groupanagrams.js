@@ -9,7 +9,7 @@ const groupAnagrams = (strs) => {
 	for (let i = 0; i < strs.length; i++) {
 		//use the spread operator on an array, sort the string and then convert it to string
 		const currKey = [...strs[i]].sort().toString()
-
+		// set the map with getting the currentKey and the current charac of string
 		if (myMap.has(currKey)) myMap.set(currKey, [...myMap.get(currKey), strs[i]])
 		if (!myMap.has(currKey)) myMap.set(currKey, [strs[i]])
 	}
